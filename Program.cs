@@ -4,15 +4,68 @@ public class Program
 {
     public static void Main()
     {
-        Console.WriteLine("Doctor 1 Object");
-        Doctor doctor1= new Doctor();
-        doctor1.GetData();
-        doctor1.PutData();
 
-        Console.WriteLine("Doctor 2 Object");
-        Doctor doctor2 = new Doctor();
-        doctor2.GetData();
-        doctor2.PutData();
+
+        Arithmetic arithmetic = new Arithmetic();
+        arithmetic.Add(10,20);
+
+
+        Arithmetic arithmetic1 = new Arithmetic();
+        arithmetic1.A = 20;
+        arithmetic1.B = 10;
+
+        Arithmetic arithmetic2 = new Arithmetic();
+        arithmetic2.Sub(arithmetic1);
+
+        int result;
+        arithmetic2.Mul(10, 20, out result);
+        Console.WriteLine($"Multiplication of 10 And 20 is = {result}");
+        //Multiplication of 10 And 20 is = 200
+
+        int result1 = 10;
+        arithmetic2.Div(10, 20, ref result1);
+        Console.WriteLine($"Result = {result1}");
+        //Result of 10 And 20 is = 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //Console.WriteLine("Doctor 1 Object");
+        //Doctor doctor1= new Doctor();
+        //doctor1.GetData();
+        //doctor1.PutData();
+
+        //Console.WriteLine("Doctor 2 Object");
+        //Doctor doctor2 = new Doctor();
+        //doctor2.GetData();
+        //doctor2.PutData();
 
 
 
