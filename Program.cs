@@ -4,13 +4,26 @@ public class Program
 {
     public static void Main()
     {
-        Console.WriteLine("Employee1 Object Information");
-        Employee employee1 = new Employee();
-        employee1.GetData();
-        employee1.PutData();
+        Console.WriteLine("Doctor 1 Object");
+        Doctor doctor1= new Doctor();
+        doctor1.GetData();
+        doctor1.PutData();
+
+        Console.WriteLine("Doctor 2 Object");
+        Doctor doctor2 = new Doctor();
+        doctor2.GetData();
+        doctor2.PutData();
 
 
-        CreateDemoObject();
+
+
+        //Console.WriteLine("Employee1 Object Information");
+        //Employee employee1 = new Employee();
+        //employee1.GetData();
+        //employee1.PutData();
+
+
+        //CreateDemoObject();
     }
 
     public static void CreateDemoObject()

@@ -9,12 +9,20 @@ namespace ObjectOrientedDemo
     internal class Employee
     {
         public int Id { get; set; }
+        public string RollNumber { get; set; }
+        public int Salary { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
 
 
         public void GetData()
         {
+
+            Employee employee = new Employee();
+            employee.GetData();
+
+
+
             Console.WriteLine("Please Enter the Value for employee Id");
             this.Id = Convert.ToInt32(Console.ReadLine());
 
