@@ -15,9 +15,9 @@ namespace ObjectOrientedDemo
         {
             int result = num1 + num2;
 
-           // Console.WriteLine("Addition of" +num1+ "And" +num2+ "is =" +result);
+            // Console.WriteLine("Addition of" +num1+ "And" +num2+ "is =" +result);
             Console.WriteLine($"Addition of {num1} And {num2} is = {result}");
-                                 // Addition of 10 And 20 is = 30
+            // Addition of 10 And 20 is = 30
 
         }
 
@@ -26,18 +26,38 @@ namespace ObjectOrientedDemo
         {
             int result = arth.A - arth.B;
             Console.WriteLine($"Substraction of {arth.A} And {arth.B} is = {result}");
-                                 //Substraction of 20 And 10 is = 10
+            //Substraction of 20 And 10 is = 10
 
         }
 
-        public void Mul(int num1, int num2, out int result)     //Output Parameters or Arguments
+        //Formal Parameter
+        public void Mul(int a, int b, out int result)            //Output Parameters or Arguments
         {
-            result = num1 * num2;
-
+            result = a * b;
         }
-        public void Div(int num1, int num2, ref int result1)     //Input-Output Parameters or Arguments
+
+        public void Div(int a, int b, ref int resultnew)        //Input-Output Parameters or Arguments
         {
-            result1 = result1 + num1 / num2;
+            resultnew = resultnew + a / b;
+        }
+
+        public int Mod(int num1, int num2)
+        {
+            int result = num1 % num2;
+            return result;
+        }
+
+
+        public int ArithmaticOperation(int a, int b, out int substractionResult, out int multiplicationResult,
+                                        out int divisionResult, out int modResult)
+        {
+            int additionResult = a + b;
+            substractionResult = a - b;
+            multiplicationResult = a * b;
+            divisionResult = a / b;
+            modResult = a % b;
+
+            return additionResult;
         }
     }
 }
